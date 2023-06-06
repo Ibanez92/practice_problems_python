@@ -28,14 +28,21 @@ word_file = open(r"wordplay/sowpods.txt", "r").read().split('\n')
 
 # What are all of the words that contain the word CAT and are exactly 5 letters long?
 
-def words_with_CAT_5letters_long(words):
-    for word in word_file:
-        if len(word) == 5 and "cat" in word.lower():
-            print(word)
+# def words_with_CAT_5letters_long(words):
+#     for word in word_file:
+#         if len(word) == 5 and "cat" in word.lower():
+#             print(word)
 
-words_with_CAT_5letters_long(word_file)
+# words_with_CAT_5letters_long(word_file)
 
 # What are all of the words that have no E or A and are at least 15 letters long?
+
+def words_with_E_or_A_15letters_long(words):
+    for word in word_file:
+        if "a" not in word.lower() and "e" not in word.lower() and len(word) == 15:
+            print(word)
+
+words_with_E_or_A_15letters_long(word_file)
 
 # What are all of the words that have a B and an X and are less than 5 letters long?
 
