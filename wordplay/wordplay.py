@@ -6,11 +6,17 @@ word_file = open(r"wordplay/sowpods.txt", "r").read().split('\n')
 #         print(word)
 
 # What are all of the words containing an X and a Y and a Z?
-for word in word_file:
-    if "X" "Y" "Z" in word:
-        print(word)
+# for word in word_file:
+#     if "X" "Y" "Z" in word:
+#         print(word)
 
 # What are all of the words containing a Q but not a U?
+def words_with_q_not_u(words): 
+    for word in word_file:
+        if "Q" in word and not "U" in word:
+            print(word)
+
+words_with_q_not_u(word_file)
 
 # What are all of the words that contain the word CAT and are exactly 5 letters long?
 
@@ -25,3 +31,4 @@ for word in word_file:
 # What are all of the words that have all 5 vowels, in any order?
 
 # What are all of the words that have all 5 vowels, in alphabetical order?
+
