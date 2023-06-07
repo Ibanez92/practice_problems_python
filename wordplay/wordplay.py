@@ -55,14 +55,21 @@ word_file = open(r"wordplay/sowpods.txt", "r").read().split('\n')
 
 # What are all of the words that both start and end with a Y?
 
-def words_start_end_with_Y(words):
-    for word in words:
-        if word.startswith('Y') and word.endswith('Y'):
-            print(word)
+# def words_start_end_with_Y(words):
+#     for word in words:
+#         if word.lower().startswith('y') and word.lower().endswith('y'):
+#             print(word)
 
-words_start_end_with_Y(word_file)
+# words_start_end_with_Y(word_file)
 
 # What are all of the words with no vowel and not even a Y?
+
+# def words_with_vowels_even_Y(words):
+#     for word in words:
+#         if "a" not in word.lower() and "e" not in word.lower() and "i" not in word.lower() and "o" not in word.lower() and "u" not in word.lower() and "y" not in word.lower():
+#             print(word)
+
+# words_with_vowels_even_Y(word_file)
 
 # What are all of the words that have all 5 vowels, in any order?
 
