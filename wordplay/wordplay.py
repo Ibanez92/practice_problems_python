@@ -73,5 +73,12 @@ word_file = open(r"wordplay/sowpods.txt", "r").read().split('\n')
 
 # What are all of the words that have all 5 vowels, in any order?
 
+def words_with_all_5vowels(words):
+    for word in words:
+        if "a" in word.lower() and "e" in word.lower() and "i" in word.lower() and "o" in word.lower() and "u" in word.lower():
+            print(word)
+
+words_with_all_5vowels(word_file)
+
 # What are all of the words that have all 5 vowels, in alphabetical order?
 
