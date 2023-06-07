@@ -46,14 +46,21 @@ word_file = open(r"wordplay/sowpods.txt", "r").read().split('\n')
 
 # What are all of the words that have a B and an X and are less than 5 letters long?
 
-def words_with_B_and_X_less_than_5letters(words):
-    for word in words:
-        if "b" in word.lower() and "x" in word.lower() and len(word) < 5:
-            print(word)
+# def words_with_B_and_X_less_than_5letters(words):
+#     for word in words:
+#         if "b" in word.lower() and "x" in word.lower() and len(word) < 5:
+#             print(word)
 
-words_with_B_and_X_less_than_5letters(word_file)
+# words_with_B_and_X_less_than_5letters(word_file)
 
 # What are all of the words that both start and end with a Y?
+
+def words_start_end_with_Y(words):
+    for word in words:
+        if word.startswith('Y') and word.endswith('Y'):
+            print(word)
+
+words_start_end_with_Y(word_file)
 
 # What are all of the words with no vowel and not even a Y?
 
