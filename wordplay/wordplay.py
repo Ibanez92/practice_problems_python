@@ -82,16 +82,15 @@ word_file = open(r"wordplay/sowpods.txt", "r").read().split('\n')
 
 # What are all of the words that have all 5 vowels, in alphabetical order?
 
-arr_with_vowels = []
+# arr_with_vowels = []
 
+# def words_vowels_in_alphabetical_order(words):
+#     for word in words:
+#         if "a" in word.lower() and "e" in word.lower() and "i" in word.lower() and "o" in word.lower() and "u" in word.lower():
+#             arr_with_vowels.append(word)
 
-def words_vowels_in_alphabetical_order(words):
-    for word in words:
-        if "a" in word.lower() and "e" in word.lower() and "i" in word.lower() and "o" in word.lower() and "u" in word.lower():
-            arr_with_vowels.append(word)
+# words_vowels_in_alphabetical_order(word_file)
 
-words_vowels_in_alphabetical_order(word_file)
+# sorted_list = sorted(arr_with_vowels)
 
-sorted_list = sorted(arr_with_vowels)
-
-print(sorted_list)
+# print(sorted_list)
