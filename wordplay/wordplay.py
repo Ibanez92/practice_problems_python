@@ -99,6 +99,17 @@ word_file = open(r"wordplay/sowpods.txt", "r").read().split('\n')
 
 # How many words contain the substring "TYPE”?
 
+
+
+def count_words_TYPE(words):
+    count = 0
+    for word in words:
+        if "type" in word.lower():
+            count = count + 1
+    print(count)
+
+count_words_TYPE(word_file)
+
 # Create and print an array containing all of the words that end in "GHTLY"
 
 # What is the shortest word that contains all 5 vowels?
