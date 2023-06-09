@@ -126,12 +126,15 @@ word_file = open(r"wordplay/sowpods.txt", "r").read().split('\n')
 list_of_vowels = []
 
 def shortest_word_with_all_5vowels(words):
+
     for word in words:
         if "a" in word.lower() and "e" in word.lower() and "i" in word.lower() and "o" in word.lower() and "u" in word.lower():
             list_of_vowels.append(word)
 
-    res = min(list_of_vowels, key=len)
-    print(res)
+    smallest_len = len(min(list_of_vowels, key=len))
+    smallest = [name for name in list_of_vowels if len(name) == smallest_len]
+    print(smallest)
+
 shortest_word_with_all_5vowels(word_file)
 
 # What is the longest word that contains no vowels?
