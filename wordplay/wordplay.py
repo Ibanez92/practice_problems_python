@@ -123,21 +123,35 @@ word_file = open(r"wordplay/sowpods.txt", "r").read().split('\n')
 
 # What is the shortest word that contains all 5 vowels?
 
-list_of_vowels = []
+# list_of_vowels = []
 
-def shortest_word_with_all_5vowels(words):
+# def shortest_word_with_all_5vowels(words):
 
-    for word in words:
-        if "a" in word.lower() and "e" in word.lower() and "i" in word.lower() and "o" in word.lower() and "u" in word.lower():
-            list_of_vowels.append(word)
+#     for word in words:
+#         if "a" in word.lower() and "e" in word.lower() and "i" in word.lower() and "o" in word.lower() and "u" in word.lower():
+#             list_of_vowels.append(word)
 
-    smallest_len = len(min(list_of_vowels, key=len))
-    smallest = [name for name in list_of_vowels if len(name) == smallest_len]
-    print(smallest)
+#     smallest_len = len(min(list_of_vowels, key=len))
+#     smallest = [name for name in list_of_vowels if len(name) == smallest_len]
+#     print(smallest)
 
-shortest_word_with_all_5vowels(word_file)
+# shortest_word_with_all_5vowels(word_file)
 
 # What is the longest word that contains no vowels?
+
+list_of_no_vowels = []
+
+def longest_word_with_all_5vowels(words):
+
+    for word in words:
+        if "a" not in word.lower() and "e" not in word.lower() and "i" not in word.lower() and "o" not in word.lower() and "u" not in word.lower():
+            list_of_no_vowels.append(word)
+
+    longest_len = len(max(list_of_no_vowels, key=len))
+    longest = [name for name in list_of_no_vowels if len(name) == longest_len]
+    print(longest)
+
+longest_word_with_all_5vowels(word_file)
 
 # Which of the letters Q, X, and Z is the least common?
 
