@@ -110,18 +110,29 @@ word_file = open(r"wordplay/sowpods.txt", "r").read().split('\n')
 
 # Create and print an array containing all of the words that end in "GHTLY"
 
-arr_with_words_ending_in_GHTLY = []
+# arr_with_words_ending_in_GHTLY = []
 
-def words_end_in_GHTLY(words):
-    for word in words:
-        if word.lower().endswith("ghtly"):
-            arr_with_words_ending_in_GHTLY.append(word)
+# def words_end_in_GHTLY(words):
+#     for word in words:
+#         if word.lower().endswith("ghtly"):
+#             arr_with_words_ending_in_GHTLY.append(word)
 
-words_end_in_GHTLY(word_file)
+# words_end_in_GHTLY(word_file)
 
-print(arr_with_words_ending_in_GHTLY)
+# print(arr_with_words_ending_in_GHTLY)
 
 # What is the shortest word that contains all 5 vowels?
+
+list_of_vowels = []
+
+def shortest_word_with_all_5vowels(words):
+    for word in words:
+        if "a" in word.lower() and "e" in word.lower() and "i" in word.lower() and "o" in word.lower() and "u" in word.lower():
+            list_of_vowels.append(word)
+
+    res = min(list_of_vowels, key=len)
+    print(res)
+shortest_word_with_all_5vowels(word_file)
 
 # What is the longest word that contains no vowels?
 
