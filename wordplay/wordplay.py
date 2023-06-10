@@ -166,7 +166,8 @@ def least_common_letters_Q_X_Z(words):
     c = Counter()
     for word in words:
         for letter in word:
-            c[letter] += 1
+            if letter in dic:
+                c[letter] += 1
 
     print(c)        
     
