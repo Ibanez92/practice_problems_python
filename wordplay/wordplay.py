@@ -139,21 +139,27 @@ word_file = open(r"wordplay/sowpods.txt", "r").read().split('\n')
 
 # What is the longest word that contains no vowels?
 
-list_of_no_vowels = []
+# list_of_no_vowels = []
 
-def longest_word_with_all_5vowels(words):
+# def longest_word_with_all_5vowels(words):
 
-    for word in words:
-        if "a" not in word.lower() and "e" not in word.lower() and "i" not in word.lower() and "o" not in word.lower() and "u" not in word.lower():
-            list_of_no_vowels.append(word)
+#     for word in words:
+#         if "a" not in word.lower() and "e" not in word.lower() and "i" not in word.lower() and "o" not in word.lower() and "u" not in word.lower():
+#             list_of_no_vowels.append(word)
 
-    longest_len = len(max(list_of_no_vowels, key=len))
-    longest = [name for name in list_of_no_vowels if len(name) == longest_len]
-    print(longest)
+#     longest_len = len(max(list_of_no_vowels, key=len))
+#     longest = [name for name in list_of_no_vowels if len(name) == longest_len]
+#     print(longest)
 
-longest_word_with_all_5vowels(word_file)
+# longest_word_with_all_5vowels(word_file)
 
 # Which of the letters Q, X, and Z is the least common?
+
+def least_common_letters_Q_X_Z(words):
+    for word in words:
+        print(word)
+
+least_common_letters_Q_X_Z(word_file)
 
 # What is the longest palindrome?
 
