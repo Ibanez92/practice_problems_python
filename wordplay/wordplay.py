@@ -1,4 +1,5 @@
 word_file = open(r"wordplay/sowpods.txt", "r").read().split('\n')
+from collections import Counter
 
 # What are all of the words containing UU?
 
@@ -162,9 +163,13 @@ dic = {
 }
 
 def least_common_letters_Q_X_Z(words):
+    c = Counter()
     for word in words:
-        print(word)
+        for letter in word:
+            c[letter] += 1
 
+    print(c)        
+    
 least_common_letters_Q_X_Z(word_file)
 
 # What is the longest palindrome?
