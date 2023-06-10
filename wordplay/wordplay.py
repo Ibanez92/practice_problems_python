@@ -155,6 +155,12 @@ word_file = open(r"wordplay/sowpods.txt", "r").read().split('\n')
 
 # Which of the letters Q, X, and Z is the least common?
 
+dic = {
+    'Q':0,
+    'X':0,
+    'Z':0
+}
+
 def least_common_letters_Q_X_Z(words):
     for word in words:
         print(word)
