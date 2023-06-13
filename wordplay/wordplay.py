@@ -156,24 +156,24 @@ from collections import Counter
 
 # Which of the letters Q, X, and Z is the least common?
 
-dic = {
-    'Q':0,
-    'Z':0,
-    'X':0
-}
+# dic = {
+#     'Q':0,
+#     'Z':0,
+#     'X':0
+# }
 
-def least_common_letters_Q_X_Z(words):
-    c = Counter()
-    for word in words:
-        for letter in word:
-            if letter in dic:
-                c[letter] += 1
-    least_letter_with_count = c.most_common()[:-2:-1]
-    least_letter_in_dict = dict(least_letter_with_count)
-    for key in least_letter_in_dict.keys():
-        print("The least common letter is " + key)
+# def least_common_letters_Q_X_Z(words):
+#     c = Counter()
+#     for word in words:
+#         for letter in word:
+#             if letter in dic:
+#                 c[letter] += 1
+#     least_letter_with_count = c.most_common()[:-2:-1]
+#     least_letter_in_dict = dict(least_letter_with_count)
+#     for key in least_letter_in_dict.keys():
+#         print("The least common letter is " + key)
 
-least_common_letters_Q_X_Z(word_file)
+# least_common_letters_Q_X_Z(word_file)
 
 # What is the longest palindrome?
 
