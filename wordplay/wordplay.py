@@ -1,5 +1,6 @@
-# The open() function opens a file, and returns it as a file object
-# This function reads the entire file and returns a string
+# The open() function opens a file, and returns it as a file object.
+# This function reads the entire file and returns a string.
+# The split() method splits a string into a list. You can specify the separator, default separator is any whitespace.
 
 word_file = open(r"wordplay/sowpods.txt", "r").read().split('\n')
 from collections import Counter
