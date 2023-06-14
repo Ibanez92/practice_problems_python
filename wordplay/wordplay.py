@@ -1,3 +1,4 @@
+# The open() function opens a file, and returns it as a file object
 word_file = open(r"wordplay/sowpods.txt", "r").read().split('\n')
 from collections import Counter
 
