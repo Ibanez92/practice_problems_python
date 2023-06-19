@@ -174,6 +174,7 @@ from collections import Counter
 #             if letter in dic:
 #                 c[letter] += 1
 #     least_letter_with_count = c.most_common()[:-2:-1]
+#     print(least_letter_with_count)
 #     least_letter_in_dict = dict(least_letter_with_count)
 #     for key in least_letter_in_dict.keys():
 #         print("The least common letter is " + key)
