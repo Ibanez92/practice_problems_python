@@ -185,8 +185,8 @@ from collections import Counter
 
 
 def longestPalindrome(words):
-
     palindromeArr = []
+    
     for word in words:
         if word == word[::-1]:
             palindromeArr.append(word)
