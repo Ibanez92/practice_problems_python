@@ -184,20 +184,30 @@ from collections import Counter
 # What is the longest palindrome?
 
 
-def longestPalindrome(words):
-    palindromeArr = []
-    
-    for word in words:
-        if word == word[::-1]:
-            palindromeArr.append(word)
+# def longestPalindrome(words):
+#     palindromeArr = []
 
-    # Longest String in list
-    # using max() + key
-    res = max(palindromeArr, key = len)
-    
-    # printing result
-    print("Maximum length string is : " + res)        
+#     for word in words:
+#         if word == word[::-1]:
+#             palindromeArr.append(word)
 
-longestPalindrome(word_file)
+#     # Longest String in list
+#     # using max() + key
+#     res = max(palindromeArr, key = len)
+    
+#     # printing result
+#     print("Maximum length string is : " + res)        
+
+# longestPalindrome(word_file)
 
 # What are all of the letters that never appear consecutively in an English word? For example, we know that “U” isn’t an answer, because of the word VACUUM, and we know that “A” isn’t an answer, because of “AARDVARK”, but which letters never appear consecutively?
+
+results_arr = []
+
+def not_consecutive_letters(words):
+    for word in words:
+        for letter in word:
+            results_arr.append(letter)
+            print(results_arr)
+
+not_consecutive_letters(word_file)
