@@ -193,10 +193,11 @@ from collections import Counter
 
 #     # Longest String in list
 #     # using max() + key
-#     res = max(palindromeArr, key = len)
+#     res = max(palindromeArr, key=len)
 
 #     # printing result
 #     print("Maximum length string is : " + res)
+
 
 # longestPalindrome(word_file)
 
@@ -234,7 +235,7 @@ def not_consecutive_letters(words):
     ]
 
     for word in words:
-        previous_letter = ''
+        previous_letter = ""
         for letter in word:
             if previous_letter == letter and letter in alphabet_list:
                 alphabet_list.remove(letter)
