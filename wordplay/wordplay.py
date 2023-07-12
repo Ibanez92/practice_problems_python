@@ -3,7 +3,7 @@
 # The split() method splits a string into a list. You can specify the separator, default separator is any whitespace.
 # \n is a type of escape character that will create a new line when used.
 
-word_file = open(r"wordplay/sowpods.txt", "r").read().split('\n')
+word_file = open(r"wordplay/sowpods.txt", "r").read().split("\n")
 from collections import Counter
 
 # What are all of the words containing UU?
@@ -17,7 +17,7 @@ from collections import Counter
 
 # What are all of the words containing an X and a Y and a Z?
 
-# def words_with_X_Y_Z(words):    
+# def words_with_X_Y_Z(words):
 #     for word in words:
 #         if "z" in word.lower() and "y" in word.lower() and "x" in word.lower():
 #             print(word)
@@ -25,7 +25,7 @@ from collections import Counter
 # words_with_X_Y_Z(word_file)
 
 # What are all of the words containing a Q but not a U?
-# def words_with_Q_not_U(words): 
+# def words_with_Q_not_U(words):
 #     for word in words:
 #         if "q" in word.lower() and not "u" in word.lower():
 #             print(word)
@@ -194,20 +194,50 @@ from collections import Counter
 #     # Longest String in list
 #     # using max() + key
 #     res = max(palindromeArr, key = len)
-    
+
 #     # printing result
-#     print("Maximum length string is : " + res)        
+#     print("Maximum length string is : " + res)
 
 # longestPalindrome(word_file)
 
 # What are all of the letters that never appear consecutively in an English word? For example, we know that “U” isn’t an answer, because of the word VACUUM, and we know that “A” isn’t an answer, because of “AARDVARK”, but which letters never appear consecutively?
 
-results_arr = []
+aplhabet_list = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+]
+
 
 def not_consecutive_letters(words):
     for word in words:
         for letter in word:
-            results_arr.append(letter)
-            print(results_arr)
+            if letter:
+                print("found match")
+
 
 not_consecutive_letters(word_file)
+# print(results_arr)
