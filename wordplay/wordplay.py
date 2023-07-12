@@ -202,42 +202,45 @@ from collections import Counter
 
 # What are all of the letters that never appear consecutively in an English word? For example, we know that “U” isn’t an answer, because of the word VACUUM, and we know that “A” isn’t an answer, because of “AARDVARK”, but which letters never appear consecutively?
 
-aplhabet_list = [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F",
-    "G",
-    "H",
-    "I",
-    "J",
-    "K",
-    "L",
-    "M",
-    "N",
-    "O",
-    "P",
-    "Q",
-    "R",
-    "S",
-    "T",
-    "U",
-    "V",
-    "W",
-    "X",
-    "Y",
-    "Z",
-]
-
 
 def not_consecutive_letters(words):
+    alphabet_list = [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z",
+    ]
+
     for word in words:
+        previous_letter = ''
         for letter in word:
-            if letter:
-                print("found match")
+            if previous_letter == letter and letter in alphabet_list:
+                alphabet_list.remove(letter)
+            previous_letter = letter
+
+    print(alphabet_list)
 
 
 not_consecutive_letters(word_file)
-# print(results_arr)
