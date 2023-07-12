@@ -4,7 +4,7 @@
 # \n is a type of escape character that will create a new line when used.
 
 word_file = open(r"wordplay/sowpods.txt", "r").read().split("\n")
-from collections import Counter
+# from collections import Counter
 
 # What are all of the words containing UU?
 

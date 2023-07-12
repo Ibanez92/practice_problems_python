@@ -58,9 +58,6 @@ A file containing all of the countries in the United Nations, one country per li
 
 https://www.dropbox.com/s/k6xcq55tqanbdmz/countries.txt?dl=0
 
-
-https://www.dropbox.com/s/k6xcq55tqanbdmz/countries.txt?dl=0
-
 ## For loops and if conditions
 
 [ ] What are all of the countries that have “United” in the name?
