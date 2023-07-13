@@ -14,19 +14,21 @@ country_file = open(r"countries/countries.txt", "r").read().split("\n")
 # What countries both begin and end with a vowel?
 
 
-def countries_begin_end_vowel(countries):
-    countries_with_vowel = []
+# def countries_begin_end_vowel(countries):
+#     countries_with_vowel = []
 
-    for country in countries:
-        if len(country) >= 2 and country[0].lower() in "aeiou" and country[-1].lower() in "aeiou":
-            countries_with_vowel.append(country)
+#     for country in countries:
+#         if len(country) >= 2 and country[0].lower() in "aeiou" and country[-1].lower() in "aeiou":
+#             countries_with_vowel.append(country)
 
-    print(countries_with_vowel)
+#     print(countries_with_vowel)
 
 
-countries_begin_end_vowel(country_file)
+# countries_begin_end_vowel(country_file)
 
 # What country names are > 50% vowels?
+
+
 
 # Setting up storage to use during a for loop, including counters and arrays
 # What is the shortest country name? Make sure your solution can handle ties.
